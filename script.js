@@ -1,21 +1,21 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
 //Password Available Content
 var charsetLowSpec = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*/?";
 var charsetCap = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 var charsetLow = "abcdefghijklmnopqrstuvwxyz0123456789";
 var charsetCapSpec = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*/?";
+
 // Write password to the #password input
 function writePassword() {
-  
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
 //Generation Process
 function generatePassword(){
+  
 //Character Amount Question
   var passwordLength = prompt("How many characters would you like in your password?");
     alert("Your passwords character length will be: " +passwordLength)
